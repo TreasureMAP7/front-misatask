@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Do math homework",
+    "done": false,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [0, 1],
+      "deadline": "04/02/2026",
+      "reminder": "04/01/2026",
+      "folder": ["Homework"],
+      "note": "Page 178, trigonometry exercises"
+    }
+  },
+  {
+    "name": "Finish science report",
+    "done": true,
+    "favorited": true,
+    "detail": {
+      "collaboratorID": [2],
+      "deadline": "04/04/2026",
+      "reminder": "04/01/2026",
+      "folder": ["Homework"],
+      "note": "Include experiment results"
+    }
+  },
+  {
+    "name": "Clean bedroom",
+    "done": false,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [],
+      "deadline": "04/04/2026",
+      "reminder": "04/03/2026",
+      "folder": ["Personal"],
+      "note": "Organize desk and wardrobe"
+    }
+  },
+  {
+    "name": "Prepare presentation",
+    "done": true,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [1, 3],
+      "deadline": "04/05/2026",
+      "reminder": "03/30/2026",
+      "folder": ["Homework"],
+      "note": "Slides about climate change"
+    }
+  },
+  {
+    "name": "Buy groceries",
+    "done": false,
+    "favorited": true,
+    "detail": {
+      "collaboratorID": [],
+      "deadline": "04/05/2026",
+      "reminder": "04/04/2026",
+      "folder": ["Personal"],
+      "note": "Milk, eggs, bread"
+    }
+  },
+  {
+    "name": "Practice coding",
+    "done": false,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [4],
+      "deadline": "04/03/2026",
+      "reminder": "04/02/2026",
+      "folder": ["Project"],
+      "note": "Work on JavaScript basics"
+    }
+  },
+  {
+    "name": "Call friend",
+    "done": true,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [],
+      "deadline": "04/06/2026",
+      "reminder": "03/30/2026",
+      "folder": ["Personal"],
+      "note": "Catch up after long time"
+    }
+  },
+  {
+    "name": "Workout session",
+    "done": false,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [],
+      "deadline": "04/06/2026",
+      "reminder": "04/05/2026",
+      "folder": ["Health"],
+      "note": "30 mins cardio"
+    }
+  },
+  {
+    "name": "Read a book",
+    "done": false,
+    "favorited": true,
+    "detail": {
+      "collaboratorID": [],
+      "deadline": "04/02/2026",
+      "reminder": "04/01/2026",
+      "folder": ["Personal"],
+      "note": "Finish chapter 5"
+    }
+  },
+  {
+    "name": "Organize files",
+    "done": false,
+    "favorited": false,
+    "detail": {
+      "collaboratorID": [2, 5],
+      "deadline": "04/07/2026",
+      "reminder": "04/06/2026",
+      "folder": ["Project"],
+      "note": "Sort documents by category"
+    }
+  }
+]

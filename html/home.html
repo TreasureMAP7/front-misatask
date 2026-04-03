@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-6">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="/asset/logo.png" />
+  </head>
+  <body class="flex font-poppins bg-[#f7f7f7]">
+    <nav
+      class="sticky top-0 flex flex-col items-center gap-4 w-24 h-screen bg-main"
+    >
+      <a href="#" class="h-32 flex items-center justify-center">
+        <img src="/asset/logo.png" alt="logo" class="w-16 h-16" />
+      </a>
+      <li class="flex flex-col w-full h-screen text-white">
+        <a
+          href="/html/home.html"
+          class="flex h-12 items-center justify-center text-main bg-white duration-300 ease-out"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Tasks</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Folder</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Collab</a
+        >
+        <a
+          href="/html/profile.html"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Profile</a
+        >
+      </li>
+      <a
+        href="#"
+        class="flex w-full h-24 items-center justify-center text-white hover:text-main hover:bg-white duration-300 ease-out"
+      >
+        Settings
+      </a>
+    </nav>
+
+    <main class="flex flex-col px-8 py-8 gap-8 w-full">
+      <header class="flex justify-between items-center">
+        <h1 id="greeting" class="font-bold text-4xl">Error: Time not found?</h1>
+        <a
+          href="/html/profile.html"
+          class="flex items-center justify-center bg-white rounded-full overflow-hidden shadow-lg w-16 h-16"
+        >
+          <img src="/asset/avatar/john.png" alt="profile" class="w-10 h-10" />
+        </a>
+      </header>
+
+      <section
+        class="flex flex-col gap-3 bg-white rounded-sm shadow-lg px-4 py-4 w-full"
+      >
+        <h2 class="text-2xl font-bold">Overview</h2>
+        <hr />
+        <li class="flex items-center justify-center gap-8 w-full">
+          <ul class="flex flex-col justify-center text-center gap-2">
+            <h4 class="text-1xl font-semibold">Ongoing</h4>
+            <p id="ongoing" class="text-3xl font-bold">4</p>
+          </ul>
+          <ul class="flex flex-col justify-center text-center gap-2">
+            <h4 class="text-1xl font-semibold">Done</h4>
+            <p id="done" class="text-3xl font-bold text-main">3</p>
+          </ul>
+          <ul class="flex flex-col justify-center text-center gap-2">
+            <h4 class="text-1xl font-semibold">Overdue</h4>
+            <p id="overdue" class="text-3xl font-bold text-red">3</p>
+          </ul>
+        </li>
+      </section>
+
+      <section
+        class="flex flex-col gap-3 bg-white rounded-sm shadow-lg px-4 py-4 w-full"
+      >
+        <li class="flex gap-2">
+          <button class="filter-task active" onclick="filter()">
+            All Tasks
+          </button>
+          <button class="filter-task" onclick="filter('on')">Ongoing</button>
+          <button class="filter-task" onclick="filter('over')">Overdue</button>
+          <button class="filter-task" onclick="filter('done')">Done</button>
+        </li>
+        <hr class="opacity-50" />
+        <li id="load-task" class="list-none flex flex-col gap-4"></li>
+      </section>
+    </main>
+    <script src="/js/home.js"></script>
+    <script>
+      feather.replace();
+      filter();
+      updateTime();
+    </script>
+  </body>
+</html>

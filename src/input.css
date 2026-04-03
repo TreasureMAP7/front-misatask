@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #009e60;
+  --color-secondary: #00d07e;
+  --color-red: #ff3e3e;
+  --color-red-secondary: #ff6c6c;
+  --color-main-dark: #004526;
+  --color-main-gradient: #cfffec;
+  --color-secondary-gradient: #d7ffef;
+  --color-grey: #d3d3d3;
+  --color-grey-two: #d9d9d9;
+  --color-secondary-grey: #f3f3f3;
+  --font-poppins: Poppins, sans-serif;
+}
+
+/* Buat debugging */
+.disabled {
+  @apply pointer-events-none opacity-50 cursor-not-allowed;
+}
+
+/* Button at home */
+.filter-task {
+  @apply rounded-4xl bg-white border-2 px-2 py-1 text-main font-medium ease-out duration-300 hover:bg-main hover:text-white cursor-pointer;
+}
+
+.filter-task.active {
+  @apply rounded-4xl bg-main border-2 px-2 py-1 text-white font-medium;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite"; */

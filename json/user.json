@@ -1,0 +1,58 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "Student",
+    "email": "john123@gmail.com",
+    "password": "iuaplahottfibttf",
+    "profile": "/asset/avatar/john.png"
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "role": "Teacher",
+    "email": "jane123@gmail.com",
+    "password": "qlgwvkndrl123",
+    "profile": "/asset/avatar/jane.png"
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Blue",
+    "role": "Designer",
+    "email": "sarah789@gmail.com",
+    "password": "sb2026!pass",
+    "profile": "/asset/avatar/sarah.png"
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Anderson",
+    "role": "Admin",
+    "email": "lisa678@gmail.com",
+    "password": "la_secure123",
+    "profile": "/asset/avatar/lisa.png"
+  },
+  {
+    "firstName": "Timmy",
+    "lastName": "Anderson",
+    "role": "Intern",
+    "email": "timmy678@gmail.com",
+    "password": "ta_pass456",
+    "profile": "/asset/avatar/timmy.png"
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Smith",
+    "role": "Manager",
+    "email": "emma456@gmail.com",
+    "password": "es789!safe",
+    "profile": "/asset/avatar/emma.png"
+  },
+  {
+    "firstName": "Brad",
+    "lastName": "Smith",
+    "role": "Developer",
+    "email": "brad456@gmail.com",
+    "password": "bs_teacher321",
+    "profile": "/asset/avatar/brad.png"
+  }
+]

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-6">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="/asset/logo.png" />
+  </head>
+  <body class="flex font-poppins bg-[#f7f7f7]">
+    <nav
+      class="sticky top-0 flex flex-col items-center gap-4 w-24 h-screen bg-main"
+    >
+      <a href="#" class="h-32 flex items-center justify-center">
+        <img src="/asset/logo.png" alt="logo" class="w-16 h-16" />
+      </a>
+      <li class="flex flex-col w-full h-screen text-white">
+        <a
+          href="/html/home.html"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Tasks</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Folder</a
+        >
+        <a
+          href="#"
+          class="flex h-12 items-center justify-center hover:text-main hover:bg-white duration-300 ease-out"
+          >Collab</a
+        >
+        <a
+          href="/html/profile.html"
+          class="flex h-12 items-center justify-center text-main bg-white duration-300 ease-out"
+          >Profile</a
+        >
+      </li>
+      <a
+        href="#"
+        class="flex w-full h-24 items-center justify-center text-white hover:text-main hover:bg-white duration-300 ease-out"
+      >
+        Settings
+      </a>
+    </nav>
+
+    <main class="flex flex-col px-8 py-8 gap-8 w-full">
+      <header id="profile-header" class="flex gap-6"></header>
+
+      <section
+        class="flex flex-col gap-3 bg-white rounded-lg shadow-lg px-4 py-4 w-full"
+      >
+        <h2 class="text-2xl font-semibold">Profile</h2>
+        <hr />
+        <div id="profile-content" class="flex flex-col"></div>
+      </section>
+
+      <a
+        href="index.html"
+        class="flex self-end w-fit px-4 py-2 rounded-4xl bg-red text-white text-2xl font-semibold hover:bg-red-secondary duration-300 ease-out shadow-lg"
+        >Log Out</a
+      >
+    </main>
+
+    <script src="/js/profile.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

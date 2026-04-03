@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-6">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MisaTask</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="/asset/logo.png" />
+  </head>
+  <body class="font-poppins">
+    <!-- Navbar -->
+    <header
+      class="flex bg-main py-3 px-12 justify-between text-white font-semibold sticky top-0 z-50"
+    >
+      <a href="#" class="text-lg flex">MisaTask</a>
+      <nav class="text-sm flex items-center gap-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#faq" class="hover:underline">FAQs</a> |
+        <a href="/html/signup.html" class="hover:underline">Sign Up</a>
+        <a href="/html/login.html" class="hover:underline">Log In</a>
+      </nav>
+    </header>
+
+    <main class="flex flex-col">
+      <section
+        class="flex justify-between items-center px-12 py-24 bg-linear-180 from-secondary-gradient to-white"
+        id="home"
+      >
+        <div class="flex flex-col gap-8 justify-start">
+          <header class="flex flex-col gap-4">
+            <h1 class="font-bold text-7xl text-main-dark">MisaTask</h1>
+            <p class="text-md font-medium">
+              Manage any tasks easily whenever and wherever you are.
+            </p>
+          </header>
+          <a
+            href="#"
+            class="bg-main hover:bg-secondary text-white font-semibold w-fit px-4 py-2 rounded-full duration-300 ease-out"
+            >Start Organizing</a
+          >
+        </div>
+        <aside class="group overflow-hidden select-none relative">
+          <img
+            src="/asset/logo_stem.png"
+            alt="logo"
+            class="pin w-90 absolute"
+          />
+          <img
+            src="/asset/logo_leaf.png"
+            alt="logo"
+            class="clock w-90 group-hover:rotate-180 duration-1000"
+          />
+        </aside>
+      </section>
+
+      <section
+        class="carousel-container flex relative items-center"
+        id="features"
+      >
+        <button
+          class="left-btn absolute left-12 p-2 rounded-full text-white bg-main hover:bg-secondary duration-300 ease-out cursor-pointer"
+          onclick="scrollCarousel('left')"
+        >
+          <i data-feather="arrow-left" class="w-8 h-auto"></i>
+        </button>
+        <button
+          class="right-btn absolute right-12 p-2 rounded-full text-white bg-main hover:bg-secondary duration-300 ease-out cursor-pointer"
+          onclick="scrollCarousel('right')"
+        >
+          <i data-feather="arrow-right" class="w-8 h-auto"></i>
+        </button>
+        <!-- <div class="flex gap-3 absolute left-[50%] translate-x-[-50%] bottom-4">
+          <button class="bg-grey-two rounded-full p-3"></button>
+          <button class="bg-grey-two rounded-full p-3"></button>
+          <button class="bg-grey-two rounded-full p-3"></button>
+        </div> -->
+        <div
+          class="carousel flex overflow-x-scroll snap-mandatory snap-x [scrollbar-width:none] [&::webkit-scrollbar]:hidden [-ms-overflow-style: none]"
+        >
+          <article
+            class="slide flex flex-col justify-center items-center gap-4 snap-center shrink-0 w-full py-12"
+          >
+            <header class="flex flex-col gap-2">
+              <h2 class="font-bold text-main-dark text-5xl text-center">
+                Stay in Control at a Glance
+              </h2>
+              <p class="text-md font-medium text-center">
+                See your ongoing, overdue, and completed tasks in one clear
+                dashboard.
+              </p>
+            </header>
+            <picture class="w-[70%] select-none">
+              <img src="/asset/dashboard.png" alt="dashboard" />
+            </picture>
+          </article>
+          <article
+            class="slide flex flex-col justify-center items-center gap-4 snap-center shrink-0 w-full py-12 bg-secondary-grey"
+          >
+            <header class="flex flex-col gap-2">
+              <h2 class="font-bold text-main-dark text-5xl text-center">
+                Organize Tasks with Ease
+              </h2>
+              <p class="text-md font-medium text-center">
+                Easily group tasks by project, subject, or priority to keep
+                everything structured.
+              </p>
+            </header>
+            <picture class="w-[70%] select-none">
+              <img src="/asset/folder.png" alt="dashboard" />
+            </picture>
+          </article>
+          <article
+            class="slide flex flex-col justify-center items-center gap-4 snap-center shrink-0 w-full py-12"
+          >
+            <header class="flex flex-col gap-2">
+              <h2 class="font-bold text-main-dark text-5xl text-center">
+                Work Better Together
+              </h2>
+              <p class="text-md font-medium text-center">
+                Invite collaborators, share tasks, and stay aligned with your
+                team real time.
+              </p>
+            </header>
+            <picture class="w-[70%] select-none">
+              <img src="/asset/collaborator.png" alt="dashboard" />
+            </picture>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col justify-center items-center bg-linear-180 from-white to-main-gradient py-12 gap-4"
+        id="cta"
+      >
+        <h2 class="font-bold text-main-dark text-5xl text-center">
+          Ready to Stay Organized with MisaTask?
+        </h2>
+        <a
+          href="#"
+          class="bg-main hover:bg-secondary text-white font-semibold w-fit px-4 py-2 rounded-full duration-300 ease-out"
+          >Get Started</a
+        >
+      </section>
+
+      <section
+        class="bg-main-gradient flex flex-col justify-start px-12 py-6 gap-6"
+        id="faq"
+      >
+        <h2 class="text-5xl font-bold text-main-dark">FAQs</h2>
+        <div class="flex flex-col gap-4">
+          <section class="flex flex-col gap-2 border-b boder-main">
+            <div
+              class="click flex py-2 gap-4 text-2xl font-semibold items-center cursor-pointer select-none"
+            >
+              <i
+                data-feather="chevron-right"
+                class="icon rotate-0 duration-300 ease-out"
+              ></i>
+              <h4>Is MisaTask free to use?</h4>
+            </div>
+            <article
+              class="pl-10 pb-4 grid grid-rows-[0fr] duration-300 ease-out"
+            >
+              <p class="font-medium overflow-hidden">
+                Yes. MisaTask is completely free to use. No additional fees nor
+                subscriptions.
+              </p>
+            </article>
+          </section>
+          <section class="flex flex-col gap-2 border-b boder-main">
+            <div
+              class="click flex py-2 gap-4 text-2xl font-semibold items-center cursor-pointer select-none"
+            >
+              <i
+                data-feather="chevron-right"
+                class="icon rotate-0 duration-300 ease-out"
+              ></i>
+              <h4>Is my data safe with MisaTask?</h4>
+            </div>
+            <article
+              class="pl-10 pb-4 grid grid-rows-[0fr] duration-300 ease-out"
+            >
+              <p class="font-medium overflow-hidden">
+                Yes. We prioritize your privacy and keep your data protected.
+              </p>
+            </article>
+          </section>
+          <section class="flex flex-col gap-2 border-b boder-main">
+            <div
+              class="click flex py-2 gap-4 text-2xl font-semibold items-center cursor-pointer select-none"
+            >
+              <i
+                data-feather="chevron-right"
+                class="icon rotate-0 duration-300 ease-out"
+              ></i>
+              <h4>Do I need to download anything?</h4>
+            </div>
+            <article
+              class="pl-10 pb-4 grid grid-rows-[0fr] duration-300 ease-out"
+            >
+              <p class="font-medium overflow-hidden">
+                No. You can access MisaTask directly from your browser.
+              </p>
+            </article>
+          </section>
+          <section class="flex flex-col gap-2 border-b boder-main">
+            <div
+              class="click flex py-2 gap-4 text-2xl font-semibold items-center cursor-pointer select-none"
+            >
+              <i
+                data-feather="chevron-right"
+                class="icon rotate-0 duration-300 ease-out"
+              ></i>
+              <h4>Can I use MisaTask to manage small team?</h4>
+            </div>
+            <article
+              class="pl-10 pb-4 grid grid-rows-[0fr] duration-300 ease-out"
+            >
+              <p class="font-medium overflow-hidden">
+                Yes. MisaTask has collaboration feature that allows you to keep
+                track of your team's progress easily.
+              </p>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="flex bg-main flex-col text-white px-12 py-4 gap-6">
+      <section class="flex justify-between">
+        <div class="flex flex-col justify-between">
+          <header>
+            <a href="#" class="text-lg font-semibold">MisaTask</a>
+            <p class="text-sm">Manage your task easily anytime and anywhere.</p>
+          </header>
+          <div class="flex justify-between">
+            <div class="phone">
+              <p class="font-semibold">Phone</p>
+              <a href="#" class="text-sm hover:underline">0123-4567-89</a>
+            </div>
+            <div class="email">
+              <p class="font-semibold">Email</p>
+              <a href="#" class="text-sm hover:underline">misatask@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-1">
+          <h3 class="text-lg font-semibold">Navigation</h3>
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#features" class="hover:underline">Features</a>
+          <a href="#faq" class="hover:underline">FAQs</a>
+          <a href="#" class="hover:underline">Contact us</a>
+        </nav>
+        <nav class="flex flex-col gap-1">
+          <h3 class="text-lg font-semibold">Social</h3>
+          <a href="#" class="hover:underline">WhatsApp</a>
+          <a href="#" class="hover:underline">Instagram</a>
+          <a href="#" class="hover:underline">Facebook</a>
+        </nav>
+      </section>
+      <section class="flex justify-center">
+        <p class="text-sm">Copyright © 2026, MisaTask, All Rights Reserved</p>
+      </section>
+    </footer>
+
+    <script src="/js/landing.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
