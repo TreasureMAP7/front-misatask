@@ -36,7 +36,7 @@ const filter = (status) => {
       data.forEach((task) => {
         let taskDate = new Date(task.detail.deadline);
         let overdue =  today.getTime() < taskDate.getTime() && !task.done;
-
+        let diff = new Date(Math.abs(today.getTime() - taskDate.getTime())).getDate()
         if (task.done) {
           completed++;
         } else if (overdue) {
@@ -55,7 +55,7 @@ const filter = (status) => {
 
         elTask += `
             <ul class="flex flex-col gap-1.5">
-            <h6 class="font-semibold text-xs">${overdue ? "Overdue" : (task.done ? "Done" : "Ongoing")}</h6>
+            <h6 class="font-semibold text-xs">${overdue ? `Overdue by ${diff} days` : (task.done ? "Done" : `Due in ${diff} days`)}</h6>
               <div class="flex gap-3 items-center">
                 <input type="checkbox" ${task.done ? "checked" : ""} class="w-5 h-5" disabled>
                 <p class="font-medium text-lg ${overdue && !task.done ? "text-red" : ""} ${task.done ? "line-through decoration-2" : ""}">${task.name}</p>
