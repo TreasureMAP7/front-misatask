@@ -32,12 +32,10 @@ const filter = (status) => {
       let totalDue = 0;
       let completed = 0;
       let elTask = "";
-      let todayMs = today.getTime();
 
       data.forEach((task) => {
         let taskDate = new Date(task.detail.deadline);
-        let taskDateMs = taskDate.getTime();
-        let overdue = todayMs > taskDateMs;
+        let overdue =  today.getTime() < taskDate.getTime() && !task.done;
 
         if (task.done) {
           completed++;

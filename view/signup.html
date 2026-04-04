@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome Back</title>
+    <title>Welcome to MisaTask</title>
     <link rel="stylesheet" href="/src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,8 +28,27 @@
     <main
       class="flex flex-col justify-center bg-main text-white w-full h-full gap-6 px-8"
     >
-      <h3 class="font-semibold text-4xl">Welcome Back</h3>
+      <h3 class="font-semibold text-4xl">Register Now</h3>
       <form action="" class="flex flex-col gap-4">
+        <div class="flex w-full gap-6">
+          <section class="flex flex-col gap-2 w-full">
+            <label for="first" class="text-sm font-semibold">First Name</label>
+            <input
+              type="text"
+              id="first"
+              class="bg-white h-8 rounded-sm w-full px-2 text-sm text-black"
+            />
+          </section>
+          <section class="flex flex-col gap-2 w-full">
+            <label for="last" class="text-sm font-semibold">Last Name</label>
+            <input
+              type="text"
+              id="last"
+              class="bg-white h-8 rounded-sm w-full px-2 text-sm text-black"
+            />
+          </section>
+        </div>
+
         <section class="flex flex-col gap-2 w-full">
           <label for="email" class="text-sm font-semibold">Email Address</label>
           <input
@@ -63,11 +82,37 @@
           </div>
         </section>
 
+        <section class="flex flex-col gap-2 w-full">
+          <label for="cpass" class="text-sm font-semibold"
+            >Confirm Password</label
+          >
+          <div
+            class="relative flex items-center bg-whtie rounded-sm w-full bg-white"
+          >
+            <input
+              type="password"
+              id="cpass"
+              class="bg-white h-8 rounded-sm w-full px-2 text-sm text-black"
+            />
+            <button
+              type="button"
+              class="flex text-main-dark px-2 password-toggle cursor-pointer"
+            >
+              <div class="password-show">
+                <i data-feather="eye"></i>
+              </div>
+              <div class="password-hide">
+                <i data-feather="eye-off"></i>
+              </div>
+            </button>
+          </div>
+        </section>
+
         <a
-          href="/html/home.html"
+          href=" /view/home.html"
           class="flex justify-center items-center bg-main-dark h-8 text-sm font-medium rounded-sm cursor-pointer"
         >
-          Login
+          Sign Up
         </a>
       </form>
       <div class="relative flex items-center justify-center w-full">
@@ -76,20 +121,20 @@
       </div>
       <div class="flex w-full gap-6">
         <a
-          href="/html/home.html"
+          href=" /view/home.html"
           class="flex justify-center items-center bg-white text-black text-sm font-medium w-full px-4 h-8 rounded-sm"
           >Continue With Google</a
         >
         <a
-          href="/html/home.html"
+          href=" /view/home.html"
           class="flex justify-center items-center bg-white text-black text-sm font-medium w-full px-4 h-8 rounded-sm"
           >Continue With Facebook</a
         >
       </div>
       <p class="text-sm text-center">
-        Don't have an account?
-        <a href="/html/signup.html" class="font-semibold hover:underline"
-          >Sign up here</a
+        Already have an account?
+        <a href=" /view/login.html" class="font-semibold hover:underline"
+          >Log in here</a
         >
       </p>
     </main>
@@ -99,4 +144,5 @@
       feather.replace();
     </script>
   </body>
+  < /view>
 </html>
