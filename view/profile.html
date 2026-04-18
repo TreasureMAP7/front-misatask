@@ -67,11 +67,20 @@
         <div id="profile-content" class="flex flex-col"></div>
       </section>
 
-      <a
-        href="index.html"
-        class="flex self-end w-fit px-4 py-2 rounded-4xl bg-red text-white text-2xl font-semibold hover:bg-red-secondary duration-300 ease-out shadow-lg"
-        >Log Out</a
-      >
+      <div class="flex self-end gap-4">
+        <button
+          onclick="logout()"
+          class="flex w-fit px-4 py-2 rounded-4xl bg-red text-white text-2xl font-semibold hover:bg-red-secondary duration-300 ease-out shadow-lg"
+        >
+          Log Out
+        </button>
+        <button
+          onclick="logout('delete')"
+          class="flex w-fit px-4 py-2 rounded-4xl bg-red text-white text-2xl font-semibold hover:bg-red-secondary duration-300 ease-out shadow-lg"
+        >
+          Delete Account
+        </button>
+      </div>
     </main>
 
     <script src="/js/profile.js"></script>

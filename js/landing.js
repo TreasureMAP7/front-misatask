@@ -1,3 +1,8 @@
+let user = JSON.parse(localStorage.getItem("user"));
+if (user && user.login == true) {
+  window.location.href = "/view/home.html"
+}
+
 // Carousel
 const carousel = document.querySelector(".carousel"); // Pembungkusnya
 const leftBtn = document.querySelector(".left-btn");
@@ -59,9 +64,9 @@ document.querySelectorAll(".click").forEach((item) => {
   });
 });
 
-// Disabled Debugging
-document.querySelectorAll(".disabled").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-});
+// Debugging
+// document.querySelectorAll(".disabled").forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.preventDefault();
+//   });
+// });

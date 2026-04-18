@@ -58,7 +58,7 @@
 
     <main class="flex flex-col px-8 py-8 gap-8 w-full">
       <header class="flex justify-between items-center">
-        <h1 id="greeting" class="font-bold text-4xl">Error: Time not found?</h1>
+        <h1 id="greeting" class="font-bold text-4xl">Offline?</h1>
         <a
           href=" /view/profile.html"
           class="flex items-center justify-center bg-white rounded-full overflow-hidden shadow-lg w-16 h-16"
@@ -75,15 +75,15 @@
         <li class="flex items-center justify-center gap-8 w-full">
           <ul class="flex flex-col justify-center text-center gap-2">
             <h4 class="text-1xl font-semibold">Ongoing</h4>
-            <p id="ongoing" class="text-3xl font-bold">4</p>
+            <p id="ongoing" class="text-3xl font-bold">-</p>
           </ul>
           <ul class="flex flex-col justify-center text-center gap-2">
             <h4 class="text-1xl font-semibold">Done</h4>
-            <p id="done" class="text-3xl font-bold text-main">3</p>
+            <p id="done" class="text-3xl font-bold text-main">-</p>
           </ul>
           <ul class="flex flex-col justify-center text-center gap-2">
             <h4 class="text-1xl font-semibold">Overdue</h4>
-            <p id="overdue" class="text-3xl font-bold text-red">3</p>
+            <p id="overdue" class="text-3xl font-bold text-red">-</p>
           </ul>
         </li>
       </section>
@@ -100,7 +100,7 @@
           <button class="filter-task" onclick="filter('done')">Done</button>
         </li>
         <hr class="opacity-50" />
-        <li id="load-task" class="list-none flex flex-col gap-4"></li>
+        <li id="load-task" class="list-task list-none flex flex-col gap-4"></li>
       </section>
     </main>
     <script src="/js/home.js"></script>
